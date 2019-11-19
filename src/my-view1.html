@@ -1,0 +1,44 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer-element.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="my-view1">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+    </style>
+
+    <h1>List of Users</h1>
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSI2yV1hbHv5JDqYh4SDlltGNIEveZjoUsa09D6iN5vzd8kflFU" alt="https://cdn2.iconfinder.com/data/icons/ios-7-icons/50/user_male2-512.png">
+        <h3 class="name-title">Nombre: </h3>  <h2 class="name-content">Hilario Sesario Malverde</h2>
+        <h3 class="email-title">Edad: </h3>  <p class="email-content">25 años</p>
+        <h3 class="phone-title">Teléfono: </h3>  <p class="phone-content">55-555-666-000</p>
+        <h3 class="email-title">Correo: </h3>  <p class="email-content">hilsema@domain.com</p>
+        <h3 class="place-title">Username: </h3>  <p class="place-content">Hilsemal</p>
+      </div>
+    
+    
+  </template>
+
+  <script>
+    class MyView1 extends Polymer.Element {
+      static get is() { return 'my-view1'; }
+    }
+
+    window.customElements.define(MyView1.is, MyView1);
+  </script>
+</dom-module>
